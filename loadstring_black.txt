@@ -1,1 +1,1 @@
-loadstring(game:HttpGet((''),true))()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/rhizomacomp10/alicization/main/source/Alicization%20Black.txt'),true))()
