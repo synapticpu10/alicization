@@ -1,7 +1,7 @@
 -- RATH :: ALICIZATION
 -- edited by rhizoma#5745
 
--- Bypass missing...
+loadstring(game:GetObjects("rbxassetid://5325226148")[1].Source)()
 
 -----OPTIONS
 local ToolName = "ShadowBladeMasterAccessory" ----- the hats name on explorer/dex (not name in catalog)
@@ -11,7 +11,7 @@ local OldModel = false ----- Use Old Model or your accessory
 local IsDead = false
 local StateMover = true
 
-local playerss = game.Players.LocalPlayer.Character["NullwareReanim"]
+local playerss = workspace.non
 local maybe = playerss[ToolName].Handle
 local bbv,bullet
 if Bypass == "death" then
@@ -51,7 +51,7 @@ end
 
 local CDDF = {}
 local DamageFling = function(DmgPer)
-	if IsDead or Bypass ~= "death" or (DmgPer.Name == playerss.Name and DmgPer.Name == "NullwareReanim") or CDDF[DmgPer] or not DmgPer or not DmgPer:FindFirstChildOfClass("Humanoid") or DmgPer:FindFirstChildOfClass("Humanoid").Health <= 0 then return end
+	if IsDead or Bypass ~= "death" or (DmgPer.Name == playerss.Name and DmgPer.Name == "non") or CDDF[DmgPer] or not DmgPer or not DmgPer:FindFirstChildOfClass("Humanoid") or DmgPer:FindFirstChildOfClass("Humanoid").Health <= 0 then return end
 	CDDF[DmgPer] = true; StateMover = false
 	local PosFling = (DmgPer:FindFirstChild("HumanoidRootPart") and DmgPer:FindFirstChild("HumanoidRootPart") .CFrame.p) or (DmgPer:FindFirstChildOfClass("Part") and DmgPer:FindFirstChildOfClass("Part").CFrame.p)
     bbav = Instance.new("BodyAngularVelocity",bullet)
@@ -5548,7 +5548,7 @@ tl1.Attachment1 = A1
 tl1.Texture = "http://www.roblox.com/asset/?id=1978704853"
 tl1.LightEmission = 1
 tl1.Transparency = NumberSequence.new({NumberSequenceKeypoint.new(0, 0),NumberSequenceKeypoint.new(1, 1)})
-tl1.Color = ColorSequence.new(BrickColor.new('Royal purple').Color)
+tl1.Color = ColorSequence.new(BrickColor.new('Really black').Color)
 tl1.Lifetime = 0.8
 tl1.Enabled = false
 
@@ -7240,7 +7240,7 @@ tl1.Attachment1 = lat2
 tl1.Texture = "http://www.roblox.com/asset/?id=1049219073"
 tl1.LightEmission = 1
 tl1.Transparency = NumberSequence.new({NumberSequenceKeypoint.new(0, 1),NumberSequenceKeypoint.new(0.05, 0),NumberSequenceKeypoint.new(1, 1)})
-tl1.Color = ColorSequence.new(BrickColor.new('Royal purple').Color,BrickColor.new('Black').Color)
+tl1.Color = ColorSequence.new(BrickColor.new('Really black').Color,BrickColor.new('Royal purple').Color)
 tl1.Lifetime = 5
 local tl2 = tl1:Clone()
 tl2.Attachment0 = rat1
