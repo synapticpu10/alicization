@@ -15,7 +15,7 @@ local playerss = workspace.non
 local maybe = playerss[ToolName].Handle
 local bbv,bullet
 if Bypass == "death" then
-	bullet = game.Players.LocalPlayer.Character["HumanoidRootPart"]
+	bullet = game.Players.LocalPlayer.Character["Ultra-Fabulous Hair"]
 	bullet.Transparency = 0
 	bullet.Massless = true
 	if bullet:FindFirstChildOfClass("Attachment") then
@@ -29,8 +29,6 @@ if Bypass == "death" then
 	bbv = Instance.new("BodyPosition",bullet)
     bbv.Position = playerss.Torso.CFrame.p
 end
-
-bullet.Transparency = 0.9
 
 maybe:FindFirstChildOfClass("AlignPosition").Name = "AlignPosition2"
 maybe:FindFirstChildOfClass("AlignOrientation").Name = "AlignOrientation2"
